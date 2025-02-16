@@ -1,0 +1,95 @@
+@charset "utf-8";*{padding:0;margin:0;box-sizing:border-box}
+select,input,button{border:0;outline:0;padding:10px 15px;font-size:inherit}.pxl{height:0;width:0;overflow:hidden}
+.hidden{display:none}.clear{clear:both}li{list-style-type:none}a{text-decoration:none;cursor:pointer}
+p{margin:10px 0;font-size:14px;line-height:1.4em}html,body{margin:0;padding:0;height:100%}
+body{font-family:'Droid Sans',sans-serif;font-size:14px}.content.header{display: flex;align-items: center;justify-content: space-around;margin-bottom: 0;height: 100%;}.content{margin:0 auto;width:95%;max-width:872px;position:relative;margin-bottom:10px;display:block}
+.forcereg{cursor:pointer}.forcereg:hover{text-decoration:underline}nav.top{height:55px;border-bottom:1px solid rgba(0,0,0,.5)}
+nav.top .fa{font-size:20px;padding:5px;vertical-align:middle}.searchbar{width: 90px;height: 26px;background:#fff url('../images/search.png') center right no-repeat;padding:5px 5% 5px 7px;font-size:12px;border-radius:3px;margin-left: 2%;}
+.toolbar{background:url('../images/fb-bar.png') center left no-repeat;padding-left:50px;margin:0 20px 0 2%;display:inline-block;position:relative}
+#countup{position:absolute;top:-5px;border-radius:2px;padding:1px 3px;line-height: initial;}.news{position:absolute;top:-5px;border-radius:2px;padding:1px 3px;background:#fa3e3e;color:#fff;margin-left:-8px;font-size:80%}
+.profilepic_head{padding-right:10px;border-right:1px solid #1d3b7a}.profilepic_head img{height:24px;width:24px;border:0;margin:0 5px 0 30px;vertical-align:middle}
+header.content{background:#fff}header .banner{height:315px;overflow:hidden;position:relative;background-size:cover;background-image:url('../images/bedbigeyes.jpg');}
+header .bannerpic img{width:100%}.headerlink img{vertical-align:middle}.profile{background:rgba(0,0,0,.3);border-radius:3px;box-shadow:0 1px 1px rgba(0,0,0,.07);display:block;left:25px;bottom:10px;margin-top:-120px;padding:1px;position:absolute}
+.profilepic{display:block;width:160px;background:#fff;border:4px solid #fff;border-radius:2px}
+.inner{left:0;bottom:50px;max-width:100%;position:absolute;width:100%;padding-left:194px;color:#fff;display:table;left:0;max-width:100%;position:absolute;width:100%}
+.inner h1{display:table-cell;vertical-align:bottom}.btnbox{padding-right:15px;position:relative;text-align:right;white-space:nowrap;z-index:4}
+.inner button{display:inline-block;cursor:pointer;border-radius:2px;font-size:12px;padding:10px;font-weight:bold}
+.inner button:hover{-webkit-transition-duration:.3s;transition-duration:.3s;-moz-transition-duration:.3s;text-decoration:none}
+i.fa.fa-thumbs-up,i.fa.fa-camera{padding-right:5px}.inner button.activitybtn #countup{border-radius:2px;padding:1px 3px;top:0;position:relative;margin-left:2px}
+header nav{background:#fff}header nav ul{list-style-type:none;margin:0;padding:0;overflow:hidden;padding-left:200px}
+header nav ul li{display:inline-block}header nav ul li a{display:inline-block;text-align:center;text-decoration:none;font-size:14px;margin:8px 0;padding:5px 15px 5px}
+header nav ul li a{display:inline-block;vertical-align:middle;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;position:relative;overflow:hidden}
+header nav ul li:first-child a{font-weight:bold}header nav ul li a:before{content:"";position:absolute;z-index:-1;left:50%;right:50%;bottom:0;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}
+header nav ul li a:hover:before,header nav ul li:first-child a:before{left:0;right:0}
+header nav ul li a.forcereg:hover{text-decoration:none}.promosidebar{font-size:12px;height:auto;line-height:16px;position:fixed;right:0;top:10%;width:200px;z-index:10;background:#eee;padding:5px}
+.promosidebar .advert img{display:block;width:100%}.promosidebar h3{margin:5px 0}
+.promosidebar .message{text-align:justify;font-size:12px;margin:0}.column{display:inline-block;margin:0 auto 10px auto;border-radius:2px;font-size:12px;vertical-align:top}
+.post{margin:0 auto 10px auto;border-radius:2px;background:#fff;border:1px solid #e5e5e5}
+.column img{max-width:100%}.reg-container{position:relative}aside.column{width:39%;margin-right:2%}
+aside.column ul li{background:url('../images/check_icon_inactive.png') no-repeat left center;padding-left:30px;min-height:25px;margin:10px 0 10px 5px;color:#4b4f56}
+aside h3{color:#4b4f56;text-transform:uppercase;font-size:12px;padding:5px;text-align:left}
+.friends{display:inline-block;max-width:100%}.friends .post-container{text-align:center}
+.friendprofile{width:31.5%;display:inline-block;vertical-align:top;text-align:center;margin:5px 1% 0 0}
+.friendprofile.last{margin-right:0}.friendprofile p{text-align:center;font-size:10px;margin:0 0 3px 0}
+aside.column a.followbtn{display:inline-block;border-radius:2px;font-size:12px;padding:5px}
+section.column{width:58%}.post-container{padding:5px}.post-container .article img{width:100%}
+img.postpic{height:40px;float:left;margin-right:10px}.user{font-size:16px;line-height:14px;margin:3px 0 15px 0;clear:right}
+.user span.username{font-size:15px;font-weight:bold}.user .sideinfo{padding-left:0}
+.sideinfo{font-size:11px;padding:3px 0 0 5px}.post-toolbar{display:block;border-top:1px solid #e5e5e5;margin:0 10px;padding-top:5px}
+.social{width:25%;display:inline-block;text-align:left;padding:7px 0;font-size:11px;padding-left:20px;font-weight:bold;color:#616161}
+.like{background:url('../images/like.png') no-repeat left center}
+.comment{background:url('../images/comment.png') no-repeat left center}
+.share{background:url('../images/share.png') no-repeat left center}
+ul#progress{display:block;width:100%;height:17px;border-radius:10px;overflow:hidden}
+#progress li{height:100%;float:left}#animation{overflow:hidden;width:100%;margin:80px auto 0 auto;text-align:center}
+#animation div{width:1%;overflow:hidden;font-size:20px;font-weight:bold;padding:8px 0}
+#animationTexts,#animationTexts li{margin:0;padding:0;list-style-type:none}#animationTexts{font-size:14px;margin-top:15px;text-align:center}
+li.dontCount.animationStep div.goNext{display:none !important}#registration{position:absolute;top:100px;width:100%;padding-top:20px}
+.form-container{position:relative;border-radius:2px;color:#fff;font-size:14px;padding:30px 3% 3%;background:rgba(45,78,149,0.85);box-shadow:rgba(256,256,256,0.5) 0 0 4px 5px;text-align:center;box-sizing:content-box}
+.form-container h3{font-size:27px;margin-bottom:5px 0;font-weight:700}.form-container h4{font-size:18px;margin:10px 0 5px}
+#steps .nospam{position:relative;background:url('../images/nospam.png') no-repeat center center;height:50px;width:50px;background-size:contain;margin-left:89%;margin-top:-50px;top:40px;z-index:6}
+#signupform{min-height:260px;margin:0 auto}#signupform,#signupform input,#regForm input,#signupform select,#regForm select,#signupform fieldset,#regForm fieldset{border:0;font-size:20px}
+#signupform .field,#regForm .field{padding:3px 0}#signupform label,#regForm label{display:inline-block;width:90%}
+#signupform select,#regForm select #signupform input,#regForm input{display:inline-block;width:90%;padding:5px}
+#signupform .field-agb{font-size:14px;text-align:center;padding:10px 0}#signupform .hidden{display:none}
+#signupform #submit{width:95%;cursor:pointer;text-transform:uppercase;padding:10px 0}
+#signupform .lbl_signup_error{font-size:13px;padding:2px;text-align:center}.suggestedEmails div{display:inline-block;padding:0 10px}
+#signupform .step2 label,#regForm .step2 label,#signupform .step4 label,#regForm .step2 label{width:26%}
+#signupform .step2 label#ageTo,#regForm .step2 label#ageTo{width:11%}#signupform .step2 select,#regForm .step2 select,#signupform .step2 input,#regForm .step2 input,#signupform .step4 select#myAgeFromChoose,#regForm .step4 select#myAgeFromChoose{width:20%}
+#regForm .step4 label{width:20%}#urApi{min-height:260px;margin:0 auto}#urApi,#urApi input,#regForm input,#urApi select,#regForm select,#urApi fieldset,#regForm fieldset{border:0;font-size:20px}
+#urApi .field,#regForm .field{padding:3px 0}#urApi label,#regForm label{display:inline-block;width:90%}
+#urApi select,#regForm select,#urApi input,#regForm input{display:inline-block;width:90%;padding:5px}
+#urApi .step2 label#ageFrom{display:block;width:100%;margin:0 0 7px}#urApi .field-agb{font-size:14px;text-align:center;padding:10px 0}
+#urApi .hidden{display:none}#urApi #submit{width:95%;cursor:pointer;text-transform:uppercase;padding:10px 0}
+#urApi .lbl_signup_error{font-size:13px;padding:2px;text-align:center}#urApi select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+#urApi .step2 label,#urApi .step4 label{width:26%}#urApi .step2 label#ageTo{width:11%}
+#urApi .step2 select,#urApi .step2 input,#urApi .step4 select#myAgeFromChoose{width:20%}
+.regFive h2{font-size:20px;margin-bottom:25px}.regFive #steps .gender{width:42%;cursor:pointer;display:inline-block;height:50px;text-shadow:0 1px 2px rgba(0,0,0,0.5);border-radius:3px;font-size:20px;font-weight:bold;margin:10px;padding:12px 4%;text-align:center}
+.regFive #steps .gender.female:hover,.regFive #steps .gender.male:hover{opacity:1}
+.regFive .inactive{opacity:.5}.regFive #steps .field-pseudo input,.regFive #steps .field-password input,.regFive #steps .field-email input{font-size:25px;border-radius:3px;height:auto;padding:7px;width:88%}
+.regFive #steps .field-agb a{font-weight:700;text-decoration:none}.regFive #steps .field-agb a:hover{text-decoration:underline}
+.regFive #steps .lbl_signup_error{background-color:red;padding:3px 1%;width:88%;margin:5px auto 0}
+.regFive .suggestedEmails div{display:inline-block;margin-left:3px}.regFive #steps .goPrev,.regFive #steps .goNext{font-size:20px;border-radius:3px;display:inline-block;padding:12px 4%;cursor:pointer;text-decoration:none;text-shadow:none}
+.regFive #steps .goPrev{background:#989898;width:5%;padding:12px 20px 12px 10px}
+.regFive #steps .goPrev:hover{background:#868686;text-decoration:none}.currentStep1 .regFive #steps .goPrev{display:none}
+.currentStep5 .regFive #steps .goPrev{padding:10px 4%}.regFive #steps .goNext,.regFive #steps #submit{width:80%;text-shadow:0 1px 2px rgba(0,0,0,0.5)}
+.regFive #steps #submit{text-transform:uppercase}ul#progress{display:block;overflow:hidden;font-size:0;-webkit-border-radius:10px;border-radius:10px}
+#progress li{-webkit-transition:1s;transition:1s}#steps .goNext,#dp-reg .unibutton{border-radius:3px;display:inline-block;font-size:18px;;cursor:pointer;margin:35px 10px 10px 10px;padding:8px 4%;width:41%;text-align:center}
+#steps .goNext.female{filter:none;opacity:.6}#steps .goNext.male{filter:none;opacity:.6}
+#steps .goNext.female:hover,#steps .goNext.male:hover{opacity:1}#steps a{text-decoration:underline}
+.goPrev{padding:0;width:auto;font-size:12px;text-align:right;display:inline-block;margin:3px 0 10px}
+footer{width:100%;text-align:center;padding:10px;font-size:12px;color:#333;background-color:#f6f7f9;border-top:1px solid rgba(29,49,91,.3)}
+footer a{padding:0 6px;color:#333}@media screen and (max-width:1300px){.promosidebar{width:12%}
+}@media screen and (max-width:1130px){.promosidebar{display:none}}@media screen and (max-width:780px){.social{width:32%}
+.friendprofile{width:31%}
+}@media screen and (max-width:700px) and (min-width:645px){.inner h1{font-size:24px}
+}@media screen and (max-width:645px){.content{width:100%}header.content{text-align:center;padding-top: 54px;}
+section.column,aside.column{width:95%;display:block;margin:0 auto}header .banner{height:200px}
+.profile{display:inline-block;left:230px;bottom:inherit;margin-top:-40px}.profilepic{width:120px;display:block;margin-top:-50px}
+.inner{position:static;padding-left:0;width:auto;background:#fff;text-align:left}
+.inner h1{padding-left:10px;display:block;color:#000}header nav ul{padding:0}.inner button{display:none}
+.friendprofile{width:15%}#registration{top:-400px}}@media screen and (max-width:480px){.social{font-size:10px}
+.inner h1{font-size:24px}.friendprofile{width:31.5%}#registration{top:-550px}.regFive h2{font-size:19px;margin-bottom:10px}
+#stickyLoginButton{font-size:12px;bottom:2%}}@media screen and (max-width:410px){.form-container h3{font-size: 20px;}.searchbar{padding:5px 40% 5px 7px}
+.profilepic_head{display:none}.profile{left:60%}header nav ul li a{padding:5px 5px 5px}
+}

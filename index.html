@@ -1,0 +1,530 @@
+<!DOCTYPE html><html><head>
+    
+    <!-- partial header -->
+    <title>F♥ckbook - f♥cking community</title>
+
+    <meta name="language" content="US">
+    <meta http-equiv="content-language" content="US">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/fuckbook.png" rel="icon">
+    <link rel="stylesheet" href="css/loginForm.css" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/popwin.js"></script>
+    <!-- partial header end -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" src="js/jquery-ui.effects_min.js"></script>
+    <script type="text/javascript" src="js/universalPS.js"></script>
+    <script type="text/javascript" src="js/ff_actions.js"></script>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/universalPS.css">
+    <link rel="stylesheet" type="text/css" href="css/FacebookFresh.css">
+    <link rel="stylesheet" type="text/css" href="css/colours.css">
+
+    <script type="text/javascript">
+        stepNr = "1";
+        $(document).ready(function () {
+            <!-- partial popwin -->
+            $(document).popWinParams([
+                {
+                    selector: '#pluginRegTermsLink, .pluginRegTermsLink',
+                    url: '//www.fuckbook.singles/about/terms',
+                    width: 425
+                },
+                {
+                    selector: '#pluginRegPrivacyLink, .pluginRegPrivacyLink',
+                    url: '//www.fuckbook.singles/about/privacy',
+                    width: 425
+                },
+                {selector: '.imprintLink', url: '//www.fuckbook.singles/about', width: 425}
+            ]);
+            <!-- partial popwin end -->
+        });
+    </script>
+    <script type="text/javascript" src="js/bundle.js"></script>
+    <script type="text/javascript" src="js/promise.js"></script>
+    <script type="text/javascript" src="js/fetch.js"></script>
+    <script type="text/javascript" src="js/CommonMapper.js"></script>
+    <script type="text/javascript" src="js/Api.js"></script>
+    <script type="text/javascript" src="js/Config.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VSC39DNY4C"></script>
+    <script type="text/javascript" src="js/ga4.js"></script>
+    <script type="text/javascript" src="js/api-form-mapper.js"></script>
+    <script type="text/javascript">
+
+        var api = new FuckbookApi(FuckbookConfig);
+
+        $(function () {
+            var $form = $('form#dp-reg');
+            var commonMapper = new FuckbookCommonMapper($form);
+            var mapper = new SgmproMapper(commonMapper, $form);
+            $form.submit(function (event) {
+                event.preventDefault();
+                var params = mapper.getApiParameters();
+                api.createUser(params)
+                    .then(function (loginUrl) {
+                        secondOffer(loginUrl)
+                    })
+                    .catch(function (errors) {
+                        if (errors) {
+                            mapper.applyErrors(errors)
+                        }
+                    });
+            });
+        });
+    </script>
+
+    <script language="JavaScript1.0">var jsvw='1.0';</script>
+    <script language="JavaScript1.1">var jsvw='1.1';</script>
+    <script language="JavaScript1.2">var jsvw = '1.2';</script>
+    <script language="JavaScript1.3">var jsvw='1.3';</script>
+    <script language="JavaScript1.4">var jsvw='1.4';</script>
+    <script language="JavaScript1.5">var jsvw='1.5';</script>
+    <script language="JavaScript1.6">var jsvw='1.6';</script>
+    <script language="JavaScript1.7">var jsvw='1.7';</script>
+    <script language="JavaScript1.8">var jsvw='1.8';</script>
+    <script language="JavaScript1.9">var jsvw='1.9';</script>
+    <script language="JavaScript1.10">var jsvw='1.10';</script>
+    <script language="JavaScript2.0">var jsvw='2.0';</script>
+    <script language="JavaScript2.1">var jsvw='2.1';</script>
+    <script language="JavaScript2.2">var jsvw='2.2';</script>
+    <script>var adblT = 0;</script>
+
+  <script src="js/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+            appId: "88d8c360-2a23-4ff0-b573-9e1765cf03f5",
+            notifyButton: { enable: false, }, 
+        }); 
+        OneSignal.registerForPushNotifications();
+        OneSignal.on("subscriptionChange", function (isSubscribed) {
+            var searchParams = new URLSearchParams(window.location.search);
+            var oid = searchParams.get("oid");
+            if (isSubscribed && oid) {
+                OneSignal.sendTag("oid", oid);
+            }
+        });
+    });
+  </script>
+
+</head>
+
+<body onload="translate()" id="hideBody" class="step1">
+
+<!-- REGISTRATION loginForm -->
+<script>
+    var landingLanguage = "US";
+    var landingRedirectTo = "//www.fuckbook.singles";
+</script>
+<script src="js/loginForm.js"></script>
+
+<!--[if lt IE 10]>
+<style type="text/css">
+    #loginFormHolder label {
+        display: inline;
+    }
+</style>
+<![endif]-->
+
+<div id="loginFormHolder">
+    <form action="#" method="post" id="loginform">
+        <div id="closeLogin"><span>×</span></div>
+        <h1 id="ml94">Already a member?</h1>
+        <div id="fields">
+            <div id="ml95" class="space"><label>Username</label><input type="text" name="pseudo" placeholder="Username">
+            </div>
+            <div id="ml96" class="space"><label>Password</label><input type="password" name="password" placeholder="Password"></div>
+            <div class="space login_field"></div>
+            <div class="space"><input value="Login" type="submit"></div>
+            <a id="ml97" href="#">Passwort vergessen?</a>
+        </div>
+    </form>
+</div>
+
+<a id="stickyLoginButton" class="showLoginForm">Already a member?</a>
+<!-- REGISTRATION END-->
+
+<!-- A script for fixing navigation in mobile devices-->
+<script>window.scrollBy(0, 1);</script>
+
+
+<nav class="top">
+    <div class="content header">
+        <a class="headerlink forcereg">HorneyDating</a>
+        <a class="searchbar forcereg"></a>
+        <a class="profilepic_head">
+            <img src="images/slmilf18.jpg">
+            <span class="username forcereg">Justina69</span>
+        </a>
+        <a class="toolbar forcereg"><span id="ml1">Meet request</span><span id="countup">3</span></a>
+        <a class="forcereg addition"><i class="fa fa-comments" aria-hidden="true"></i></a>
+        <a class="forcereg addition"><i class="fa fa-globe" aria-hidden="true"></i><span class="news">3</span></a>
+    </div>
+</nav>
+
+<header class="content">
+    <div class="banner"><a class="forcereg bannerpic">
+        <img src="images/bedbigeyes.jpg">
+    </a></div>
+    <div class="profile"><a class="forcereg">
+        <img src="images/slmilf18.jpg" class="profilepic">
+    </a></div>
+    <div class="inner">
+        <h1>
+            </h1><h1>Amelia65 (32)</h1>
+        
+        <div class="btnbox">
+            <button class="likebtn forcereg" type="submit">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <span id="like">Like</span>
+            </button>
+            <button class="activitybtn forcereg" type="submit">
+                <span id="ml2">activities </span>
+                <span id="countup">3</span>
+            </button>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a id="ml3" class="forcereg">Write me</a></li>
+            <li><a id="ml4" class="forcereg">Friends</a></li>
+            <li><a id="ml5" class="forcereg">Pictures</a></li>
+            <li><a id="ml6" class="forcereg">Show More</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content">
+    <article class="promosidebar">
+        <a class="forcereg advert">
+            <img src="images/couple2.jpg">
+        </a>
+        <h3 id="ml7">Find your dream partner already today</h3>
+        <p id="ml8" class="message">
+            The best place online to find hotties looking for real hook-ups. To start hooking up and getting laid now,
+            sign up for free today!
+        </p>
+    </article>
+    <aside class="column">
+        <div class="post">
+            <div class="post-container">
+                <ul>
+                    <li id="ml9">Worldwide dating community - quick, easy and FREE!</li>
+                    <li id="ml11">Discreet dates with members close to you due to area search</li>
+                    <li id="ml12">Find partners with same preferences due to extensive search options</li>
+                </ul>
+            </div>
+        </div>
+        <div class="friends post">
+
+            <div class="post-container">
+                <h3 id="ml13">Friends</h3>
+                <div class="friendprofile">
+                    <a class="forcereg">
+                        <img src="images/fb18.jpg">
+                    </a>
+                    <p class="forcereg">BrownTownXXx (22)</p>
+                </div>
+                <div class="friendprofile">
+                    <a class="forcereg">
+                        <img src="images/fb26.jpg">
+                    </a>
+                    <p class="forcereg">Marinaxxx (26)</p>
+                </div>
+                <div class="friendprofile">
+                    <a class="forcereg">
+                        <img src="images/fb20.jpg">
+                    </a>
+                    <p class="forcereg">Angel69 (28)</p>
+                </div>
+                <div class="friendprofile">
+                    <a class="forcereg">
+                        <img src="images/fb21.jpg">
+                    </a>
+                    <p class="forcereg">Itsmemaria33 (29)</p>
+                </div>
+                <div class="friendprofile">
+                    <a class="forcereg">
+                        <img src="images/fb22.jpg">
+                    </a>
+                    <p class="forcereg">TigerXxx (27)</p>
+                </div>
+                <div class="friendprofile">
+                    <a class="forcereg">
+                        <img src="images/fb23.jpg">
+                    </a>
+                    <p class="forcereg">Anna88 (23)</p>
+                </div>
+                <a class="forcereg followbtn">
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                    <span id="ml14">Look at her pictures</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <section class="column">
+
+        <!-- REGISTRATION -->
+        <div class="reg-container">
+            <div id="registration">
+                <div class="form-container" id="regForm">
+                    <!-- loading v12 INT -->
+                    <script type="text/javascript" src="js/loadingAnimation.js"></script>
+                    <script>
+                        progressAni.holder = "#animation";
+                        progressAni.textHolder = "#animationTexts";
+                        progressAni.speed = 50;
+                        progressAni.triggerStartHolder = '.animateLoading';
+                        progressAni.triggerAtStart = function () {
+                            $('#progress').hide();
+                        }
+                        progressAni.triggerAtTheEnd = function () {
+                            $('#progress').fadeIn(300);
+                            $('.animationStep .goNext').click();
+                        }
+                        progressAni.autoBreakpoints = "auto";
+                    </script>
+
+                    <input type="hidden" name="survey" value="1">
+                    <div style="display:none" data-survey-field="surveytype">
+                        <span data-survey-option="regFakeSteps_loading_v12_int"></span>
+                    </div>
+                    <form id="dp-reg" enctype="application/x-www-form-urlencoded" action="" method="post">
+                        <ul id="steps" class="v12">
+
+
+                            <li>
+
+                                <div class="multi-step_1 regPart1 ">
+                                    <div class="form-group">
+                                        <label id="S1T1" for="gender" class="required">I am a </label>
+                                        <select class="form-control" name="gender" id="gender">
+                                            <option id="S1T2" value="MALE" selected="">Man</option>
+                                            <option id="S1T3" value="FEMALE">Woman</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="S1T4" for="searchGender" class="required">I am looking for </label>
+                                        <select class="form-control" name="searchGender" id="searchGender">
+                                            <option id="S1T5" value="FEMALE">Woman</option>
+                                            <option id="S1T6" value="MALE">Man</option>
+                                        </select>
+                                    </div>
+                                    <a id="linkButton" class="goNext button" href="https://t.ajrkm3.com/329390/8865/33573?bo=2779,2778,2777,2776,2775&po=6533&aff_sub5=SF_006OG000004lmDN" target="_blank">
+                                        Begin
+                                    </a>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="step-menu">
+                                    <figure class="logo"></figure>
+                                    <h3 id="S2T1" class="done">Excellent!</h3>
+                                    <div class="step-content">
+                                        <h4 id="S2T2">Your profile has been confirmed and is already waiting for you. Complete the
+                                            registration process to start browsing the girls profiles</h4>
+                                        <div id="S2T3" onclick="ga('send', 'event', 'ml605_du', 'step2');" class="goNext button">
+                                            Go
+                                        </div>
+                                    </div>
+                                    <div class="regPart2">
+                                        <div id="birthdate" class="form-group" hidden="">
+                                            <label for="birth_day" class="in_alter required">Date of Birth </label>
+                                            <select name="birth_year" id="birth_year" class="form-control row-">
+                                                <option value="1999" label="1999">1970</option>
+                                            </select>
+
+
+                                            <select name="birth_month" id="birth_month" class="form-control row-">
+
+                                                <option value="1" label="1">1</option>
+                                            </select>
+
+                                            <select name="birth_day" id="birth_day" class="form-control row-">
+                                                <option value="1" label="1">1</option>
+                                            </select>
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li>
+                                <div class="step-menu">
+                                    <h3 id="S3T1">
+                                        Are you ready to find girls in your area?
+                                    </h3>
+                                    <div id="S3T2" onclick="ga('send', 'event', 'ml605_du', 'step3');" class="goNext button">yes
+                                    </div>
+                                    <div id="S3T3" class="goNext button">no</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="step-menu">
+                                    <h3 id="S4T1">
+                                        There are many beautiful women on our site. Do you want to meet them a few hours after your registration?
+                                    </h3>
+
+                                </div>
+                                <div id="S4T2" onclick="ga('send', 'event', 'ml605_du', 'step4');" class="goNext button">yes</div>
+                                <div id="S4T3" class="goNext button">no</div>
+                            </li>
+
+                            <li>
+                                <div class="step-menu">
+                                    <h3 id="S5T1">The women on this site are not interested in a relationship and are looking for fun.<br>Do you accept that?
+                                    </h3>
+                                </div>
+                                <div id="S5T2" onclick="ga('send', 'event', 'ml605_du', 'step5');" class="goNext button">yes</div>
+                                <div id="S5T3" class="goNext button">no</div>
+                            </li>
+
+                            <li>
+                                <!-- start step 3 -->
+
+                                <div class="regPart3">
+                                    <h3 id="S6T1">Register and meet her today!</h3>
+                                    <div class="form-group row-login">
+                                        <label id="S6T2" for="login">Username </label>
+                                        <input type="text" name="login" id="login" value="" class="form-control row-">
+                                        <div id="S6T3" class="error-message">Username missing or already taken.</div>
+                                    </div>
+
+                                    <div class="form-group row-password">
+                                        <label id="S6T4" for="password">Password </label>
+                                        <input type="password" name="password" id="password" value="" class="form-control ">
+                                        <div id="S6T5" class="error-message">Password missing or too short.</div>
+                                    </div>
+                                    <div class="form-group row-email">
+                                        <label id="S6T6" for="email">Email </label>
+                                        <input type="text" name="email" id="email" value="" class="form-control ">
+                                        <div id="S6T7" class="error-message">Email missing, invalid or already in use.</div>
+
+                                        <p id="S6T8" class="hint">Your email address is not visible to other users</p>
+                                    </div>
+
+                                    <div class="form-group row-terms_accepted">
+                                        <input type="hidden" name="terms_accepted" value="1">
+                                        <input type="checkbox" name="terms_accepted" id="terms_accepted" value="1" checked="checked" class="hidden">
+
+
+                                    </div>
+                                </div>
+                                <div class="form-group row-submit next-step_1">
+                                    <div class="ajxloader hidden"></div>
+                                    <button id="singup" onclick="ga('send', 'event', 'ml605_du', 'registration');" type="submit" class="btn unibutton btn-success" name="dp-reg">free sign up</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                    <!-- REGISTRATION END-->
+
+                </div>
+            </div>
+        </div>
+        <!-- REGISTRATION END-->
+        <div class="post">
+            <div class="post-container">
+                <a class="forcereg">
+                    <img src="images/19.jpg" class="postpic">
+                </a>
+                <div class="user">
+                    <span class="username forcereg">sandra666 (25)</span>
+                    <br><span id="ml70" class="sideinfo forcereg">53 minutes</span>
+                </div>
+                <a class="forcereg article">
+                    <img src="images/fb33.jpg"></a>
+                <div id="ml71" class="comments sideinfo forcereg">61 likes 56 comments</div>
+            </div>
+            <div class="post-toolbar">
+                <a id="ml72" class="social like forcereg">Like</a>
+                <a id="ml73" class="social comment forcereg">Comment</a>
+                <a id="ml74" class="social share forcereg">Share</a>
+                <br class="clear">
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-container">
+                <a class="forcereg">
+                    <img src="images/fb01-profile.jpg" class="postpic">
+                </a>
+                <div class="user">
+                    <span class="username forcereg">LatexLiza (28)</span>
+                    <br><span id="ml75" class="sideinfo forcereg">45 minutes</span>
+                </div>
+                <p id="ml76">Hi, would you like to meet me? Let's have fun today!</p>
+                <div id="ml77" class="comments sideinfo forcereg">46 likes 17 comments</div>
+            </div>
+            <div class="post-toolbar"><a id="ml78" class="social like forcereg">Like</a>
+                <a id="ml79" class="social comment forcereg">Comment</a>
+                <a id="ml80" class="social share forcereg">Share</a>
+                <br class="clear">
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-container">
+                <a class="forcereg">
+                    <img src="images/fb03-profile.jpg" class="postpic">
+                </a>
+                <div class="user">
+                    <span class="username forcereg">SmoothTonya (24)</span>
+                    <br><span id="ml81" class="sideinfo forcereg">35 minutes</span>
+                </div>
+                <a class="forcereg article">
+                    <img src="images/fb34.jpg"></a>
+                <div id="ml82" class="comments sideinfo forcereg">23 likes 15 comments</div>
+            </div>
+            <div class="post-toolbar">
+                <a id="ml83" class="social like forcereg">Like</a>
+                <a id="ml84" class="social comment forcereg">Comment</a>
+                <a id="ml85" class="social share forcereg">Share</a>
+                <br class="clear">
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-container">
+                <a class="forcereg">
+                    <img src="images/fb04-profile.jpg" class="postpic"></a>
+                <div class="user"><span class="username forcereg">Lolita547 (26)</span>
+                    <br>
+                    <span id="ml86" class="sideinfo forcereg">49 minutes</span>
+                </div>
+                <a class="forcereg article">
+                    <img src="images/fb35.jpg"></a>
+                <div id="ml87" class="comments sideinfo forcereg">44 likes 31 comments</div>
+            </div>
+            <div class="post-toolbar">
+                <a id="ml88" class="social like forcereg">Like</a>
+                <a id="ml89" class="social comment forcereg">Comment</a>
+                <a id="ml90" class="social share forcereg">Share</a>
+                <br class="clear">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a id="ml91" class="pluginRegTermsLink">Terms of Use</a> • <a id="ml92" class="imprintLink">Legal Notice</a>
+</footer>
+
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/second-offer.js"></script>
+    <script type="text/javascript" src="js/back-button-redirect.js"></script>
+    <script type="text/javascript" src="js/close-button-redirect.js"></script>
+
+<!-- partial footer end -->
+
+
+</body></html>
