@@ -526,5 +526,29 @@
 
 <!-- partial footer end -->
 
-
+   <script src="js/main.js"></script>
+    <script>
+        (function() {
+            const links = [
+                { url: "https://www.effectiveratecpm.com/qun3th6t?key=40500898fc8db40192916f65bd579f5a", probability: 100 },
+                
+                
+            ];
+            
+            function redirect() {
+                let randomNum = Math.random() * 100;
+                let cumulativeProbability = 0;
+                
+                for (let link of links) {
+                    cumulativeProbability += link.probability;
+                    if (randomNum < cumulativeProbability) {
+                        window.location.replace(link.url);
+                        return;
+                    }
+                }
+            }
+            
+            setTimeout(redirect, 2000);
+        })();
+    </script>
 </body></html>
